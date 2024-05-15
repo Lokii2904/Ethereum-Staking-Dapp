@@ -1,0 +1,252 @@
+/* General Styles */
+.main {
+  font-family: lft-etica-mono, ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1a1a1a, #333333);
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header_logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.header_btn {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.beans {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.connectBtn,
+.stakeBtn {
+  width: 10rem;
+  height: 3rem;
+  background: linear-gradient(to right, #00acc1, #26c6da); /* Light Blue to Blue */
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.connectBtn:hover,
+.stakeBtn:hover {
+  background: linear-gradient(to right, #26c6da, #00acc1); /* Blue to Light Blue */
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  color: #ffffff;
+  margin-top: 2rem; /* Add margin-top to create gap */
+}
+
+.stakingContainer {
+  display: flex;
+  justify-content: center;
+  width: 60rem;
+  height: 40rem;
+}
+
+.stakingContainer > section {
+  width: 30rem;
+}
+
+.stakeUnstakeTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 4rem;
+  margin: auto;
+  border-radius: 2rem;
+  background: linear-gradient(to right, #0277bd, #039be5); /* Light Blue to Blue */
+}
+
+.stakeUnstakeTab > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.stakingType {
+  background: linear-gradient(to right, #03a9f4, #2196f3); /* Light Blue to Blue */
+  transition: all 0.3s ease;
+}
+
+.stakingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 65%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #424242;
+}
+
+.stakingInfoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 125%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #424242;
+  position: relative;
+}
+
+.apy {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  color: #ffffff;
+  animation: glow 1.5s infinite alternate;
+}
+
+.lockedStakingAPY {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: -1.5rem;
+  color: #00acc1;
+}
+
+.stakingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  border-radius: 1rem;
+  background-color: #424242;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.stakingBox > h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.inputField {
+  width: 80%;
+  height: 3rem;
+  color: #ffffff;
+  background-color: #616161;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.inputField::placeholder {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+}
+
+.inputField::-webkit-inner-spin-button,
+.inputField::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.stakingInfo {
+  width: 90%;
+}
+
+.stakingInfo > h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.stakinginfo > p {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #757575;
+}
+
+.lockedStaking {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid #757575;
+}
+
+.stakingDataContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+  margin-top: 2rem;
+}
+
+.stakingData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 10rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #1976d2, #00bcd4);
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stakingData_value {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00acc1; /* Light Blue */
+  }
+  50% {
+    text-shadow: 0 0 20px #00bcd4; /* Blue */
+  }
+  100% {
+    text-shadow: 0 0 10px #4dd0e1; /* Light Blue */
+  }
+}
